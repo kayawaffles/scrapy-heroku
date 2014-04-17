@@ -10,8 +10,9 @@ from scrapyd.interfaces import (IEggStorage, IPoller, ISpiderScheduler,
 from scrapyd.launcher import Launcher
 from scrapyd.eggstorage import FilesystemEggStorage
 from scrapyd.environ import Environment
-from scrapyd.website import Root
+#from scrapyd.website import Root
 
+from .website import Root
 from .scheduler import Psycopg2SpiderScheduler
 from .poller import Psycopg2QueuePoller
 
